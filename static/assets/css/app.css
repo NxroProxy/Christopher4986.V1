@@ -7,27 +7,7 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-[anim="ripple"] {
-  position: relative;
-  overflow: hidden;
-}
 
-[anim="ripple"]:before {
-  content: '';
-  position: absolute;
-  display: block;
-  background: var(--ripple-background, white);
-  border-radius: 50%;
-  pointer-events: none;
-  top: calc(var(--y) * 1px);
-  left: calc(var(--x) * 1px);
-  width: calc(var(--d) * 1px);
-  height: calc(var(--d) * 1px);
-  opacity: calc(var(--o, 1) * var(--ripple-opacity, 0.3));
-  transition: calc(var(--t, 0) * var(--ripple-duration, 600ms)) var(--ripple-easing, linear);
-  transform: translate(-50%, -50%) scale(var(--s, 1));
-  transform-origin: center;
-}
 
 body {
   height: 100%;
@@ -45,9 +25,6 @@ form {
 }
 
 .btn-main {
-  --ripple-background: rgb(185, 185, 185);
-  --ripple-opacity: 2.0;
-  --ripple-duration: 300ms;
   width: 85px;
   height: 85px;
   align-items: right;
@@ -55,7 +32,7 @@ form {
   border-radius: 10px;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  color: white;
+  color: purple;
   cursor: pointer;
   font-family: poppins;
   font-size: 15px;
