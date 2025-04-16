@@ -1,24 +1,4 @@
-[anim="ripple"] {
-    position: relative;
-    overflow: hidden;
-}
 
-[anim="ripple"]:before {
-    content: '';
-    position: absolute;
-    display: block;
-    background: var(--ripple-background, white);
-    border-radius: 50%;
-    pointer-events: none;
-    top: calc(var(--y) * 1px);
-    left: calc(var(--x) * 1px);
-    width: calc(var(--d) * 1px);
-    height: calc(var(--d) * 1px);
-    opacity: calc(var(--o, 1) * var(--ripple-opacity, 0.3));
-    transition: calc(var(--t, 0) * var(--ripple-duration, 600ms)) var(--ripple-easing, linear);
-    transform: translate(-50%, -50%) scale(var(--s, 1));
-    transform-origin: center;
-}
 
 h1 {
     font-family: poppins;
@@ -57,9 +37,6 @@ p {
     margin-left: -5px;
 }
 .option {
-    --ripple-background: rgb(146, 146, 146);
-    --ripple-opacity: 2.0;
-    --ripple-duration: 300ms;
     font-family: poppins;
     color: white;
     border-radius: 10px;
@@ -102,9 +79,6 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
 }
 #panicPopup-content button {
-    --ripple-background: rgb(80, 80, 80);
-    --ripple-opacity: 2.0;
-    --ripple-duration: 300ms;
     margin: 10px;
     height: 50px;
     border: 2px solid white;
@@ -155,9 +129,6 @@ button:disabled:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
 }
 #backgroundPopup-content button {
-    --ripple-background: rgb(80, 80, 80);
-    --ripple-opacity: 2.0;
-    --ripple-duration: 300ms;
     margin: 10px;
     height: 50px;
     border: 2px solid white;
