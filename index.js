@@ -15,7 +15,7 @@ const server = http.createServer();
 const bareServer = createBareServer('/seal/');
 const app = express(server);
 const version = packageJson.version;
-const discord = 'https://discord.gg/unblocking';
+const discord = 'https://discord.gg/kENWSSUvG5';
 const routes = [
   { route: '/mastery', file: './static/loader.html' },
   { route: '/apps', file: './static/apps.html' },
@@ -78,7 +78,7 @@ server.on("upgrade", (req, socket, head) => {
 });
 
 server.on('listening', () => {
-  console.log(chalk.bgBlue.white.bold(`  Welcome to Doge V4, user!  `) + '\n');
+  console.log(chalk.bgBlue.white.bold(`  Welcome Christopher4986.V1 User!  `) + '\n');
   console.log(chalk.cyan('-----------------------------------------------'));
   console.log(chalk.green('  🌟 Status: ') + chalk.bold('Active'));
   console.log(chalk.green('  🌍 Port: ') + chalk.bold(chalk.yellow(server.address().port)));
